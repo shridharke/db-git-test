@@ -10,4 +10,5 @@
 # MAGIC Test conflict from office
 # MAGIC Test chnages and extra changes and test rebase additional
 # MAGIC new line test
+# MAGIC Test rebase changes
 # MAGIC

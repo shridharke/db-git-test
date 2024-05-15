@@ -11,4 +11,5 @@
 # MAGIC
 # MAGIC Test chnages and extra changes
 # MAGIC new line test
+# MAGIC Test rebase changes
 # MAGIC

@@ -12,3 +12,8 @@
 # MAGIC Test rebase changes
 # MAGIC Branch lock test
 # MAGIC
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC Actions test

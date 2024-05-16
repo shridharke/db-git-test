@@ -1,0 +1,21 @@
+name: Update Databricks Repo
+
+on:
+  push:
+    branches:
+      - dev  # Replace 'main' with your target branch
+
+jobs:
+  update_repo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      
+      - name: Update Databricks Repo
+        run: |
+          curl -X PATCH \
+               -H "Authorization: Bearer ${{ secrets.DATABRICKS_TOKEN }}" \
+               -H "Content-Type: application/json" \
+               -d '{ "branch": "dev" }' \         
+               https://${{ secrets.DATABRICKS_HOST }}/api/2.0/repos/3918309733799236/update 

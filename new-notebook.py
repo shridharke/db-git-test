@@ -11,3 +11,7 @@
 # MAGIC new line test
 # MAGIC Test rebase changes
 # MAGIC
+
+# COMMAND ----------
+
+Test code branch lock

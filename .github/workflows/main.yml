@@ -14,8 +14,4 @@ jobs:
       
       - name: Update Databricks Repo
         run: |
-          curl -X PATCH \
-               -H "Authorization: Bearer ${{ secrets.DATABRICKS_TOKEN }}" \
-               -H "Content-Type: application/json" \
-               -d '{ "branch": "dev" }' \         
-               https://${{ secrets.DATABRICKS_HOST }}/api/2.0/repos/3918309733799236/update 
+          curl -X PATCH "https://${DATABRICKS_HOST}/api/2.0/repos/3918309733799236" -H "Authorization: Bearer ${{ secrets.DATABRICKS_TOKEN }}" -H "Content-Type: application/json" -d '{ "branch": "dev" }'
